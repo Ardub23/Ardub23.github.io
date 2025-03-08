@@ -1,145 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameron Lentz - Game Programmer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1e1e2e;
-            color: #ffffff;
-            text-align: center;
-        }
-        header {
-            background-color: #282a36;
-            padding: 20px;
-            font-size: 24px;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-        }
-        .section {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #30323e;
-            border-radius: 8px;
-        }
-        a {
-            color: #8be9fd;
-            text-decoration: none;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .project-card {
-            background-color: #54476a;
-            border-radius: 8px;
-            max-width: 300px;
-            overflow: hidden;
-            text-align: left;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .project-card img {
-            max-width: 100%;
-            max-height: 180px;
-            object-fit: cover;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cameron Lentz - Game Programmer</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #1e1e2e;
+			color: #ffffff;
+			text-align: center;
+		}
+		header {
+			background-color: #282a36;
+			padding: 20px;
+			font-size: 24px;
+		}
+		header p {
+			font-size: 16px;
+		}
+		.container {
+			width: 80%;
+			margin: 20px auto;
+		}
+		.section {
+			margin: 20px 0;
+			padding: 20px;
+			background-color: #30323e;
+			border-radius: 8px;
+		}
+		a {
+			color: #8be9fd;
+			text-decoration: none;
+		}
+		.projects {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+		.project-card {
+			background-color: #545454;
+			border-radius: 8px;
+			max-width: 300px;
+			overflow: hidden;
+			text-align: left;
+			box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+			display: flex;
+			flex-direction: column;
+		}
+		.project-card img {
+			max-width: 100%;
+			max-height: 180px;
+			object-fit: cover;
+		}
 		.project-card h3 {
 			text-align: center
 		}
-        .project-card .content {
-            padding: 15px;
-        }
+		.project-card .content {
+			padding: 15px;
+		}
 		.play-button {
-			background-color: #22054a;
-			color: #ffffcf;
+			display: block;
+			min-width: 75%;
+			margin: auto auto 16px;
+			background-color: #22154a;
+			color: #ffffdf;
+			font-weight: bold;
 			padding: 6px;
 			border-radius: 8px;
 			border-width: 4px;
 			border-style: outset;
-			border-color: #624388;
+			border-color: #726388;
 			text-align: center;
 		}
-        @media (max-width: 600px) {
-            .projects {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+		@media (max-width: 600px) {
+			.projects {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	</style>
 </head>
 <body>
-    <header>
-        <h1>Cameron Lentz</h1>
+	<header>
+		<h1>Cameron Lentz</h1>
 		<h2>Game Programmer</h2>
-    </header>
-    <div class="container">
-        <div class="section">
-            <h2>Contact</h2>
-            <p><a href="mailto:cameronrw23@yahoo.com">CameronRW23@yahoo.com</a></p>
-            <p>Call or text (385)&nbsp;319-4099</p>
-            <p><a href="https://www.linkedin.com/in/cameronlentz/" target="_blank">linkedin.com/in/CameronLentz</a></p>
-        </div>
-        <div class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <a href="https://rainstorminteractive.itch.io/space-out" target="_blank"><img src="images/space_out_thumb.png" alt="Space Out thumbnail"></a>
-                    <div class="content">
-                        <h3>Space Out</h3>
+		<p><a href="mailto:cameronrw23@yahoo.com">CameronRW23@yahoo.com</a> &bull; (385)&nbsp;319-4099 &bull; <a href="https://www.linkedin.com/in/cameronlentz/" target="_blank">linkedin.com/in/CameronLentz</a></p>
+	</header>
+	<div class="container">
+		<div class="section">
+			<h2>Projects</h2>
+			<div class="projects">
+				<div class="project-card" style="background-color: #3c537c;">
+					<a href="https://rainstorminteractive.itch.io/space-out" target="_blank"><img src="images/space_out_thumb.png" alt="Space Out thumbnail"></a>
+					<div class="content">
+						<h3>Space Out</h3>
 						<h4>Programmer (Unity), Composer</h4>
-                        <p>Implemented enemy behavior, improved gameplay, and built level design tools.</p>
-                        <a class="play-button" href="https://rainstorminteractive.itch.io/space-out" target="_blank">View on itch.io</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="https://rainstorminteractive.itch.io/pips-journey" target="_blank"><img href="https://rainstorminteractive.itch.io/pips-journey" src="images/pips_journey_thumb.png" alt="Pip’s Journey thumbnail"></a>
-                    <div class="content">
-                        <h3>Pip’s Journey</h3>
+						<p>Implemented enemy behavior, improved gameplay, and built level design tools.</p>
+					</div>
+					<a class="play-button" href="https://rainstorminteractive.itch.io/space-out" target="_blank">View on itch.io</a>
+				</div>
+				<div class="project-card" style="background-color: #2e2e5c;">
+					<a href="https://rainstorminteractive.itch.io/pips-journey" target="_blank"><img href="https://rainstorminteractive.itch.io/pips-journey" src="images/pips_journey_thumb.png" alt="Pip’s Journey thumbnail"></a>
+					<div class="content">
+						<h3>Pip’s Journey</h3>
 						<h4>Lead Programmer (Unreal)</h4>
-                        <p>Overhauled mechanics, fixed bugs, and collaborated on system integration.</p>
-                        <a class="play-button" href="https://rainstorminteractive.itch.io/pips-journey" target="_blank">View on itch.io</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="https://ardub23.github.io/CookieClicker/" target="_blank"><img src="images/cookie_clicker_thumb.png" alt="Cookie Clicker modding thumbnail"></a>
-                    <div class="content">
-                        <h3>Cookie Clicker modding</h3>
-						<h4>Programmer</h4>
-                        <p>Developed JavaScript mods to automate and assist gameplay tasks.</p>
-                        <a class="play-button" href="https://ardub23.github.io/CookieClicker/" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <a href="https://ardub23.itch.io/misfire" target="_blank"><img src="images/misfire_thumb.png" alt="Misfire thumbnail"></a>
-                    <div class="content">
-                        <h3>Misfire <i>(in development)</i></h3>
+						<p>Overhauled mechanics, fixed bugs, and collaborated on system integration.</p>
+					</div>
+					<a class="play-button" href="https://rainstorminteractive.itch.io/pips-journey" target="_blank">View on itch.io</a>
+				</div>
+				<div class="project-card">
+					<a href="https://ardub23.itch.io/misfire" target="_blank"><img src="images/misfire_thumb.png" alt="Misfire thumbnail"></a>
+					<div class="content">
+						<h3>Misfire <i>(in development)</i></h3>
 						<h4>Developer (Unity)</h4>
-                        <p>Created extensible gameplay systems and designed levels to make use of them.</p>
-                        <a class="play-button" href="https://ardub23.itch.io/misfire" target="_blank">View on itch.io</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <h2>Skills</h2>
-            <p><b>Game Engines:</b> Unreal Engine, Unity</p>
-            <p><b>Programming:</b> C#, C++, Java, JavaScript, Python, Lua</p>
-            <p><b>Art & Animation:</b> Autodesk Maya, Photoshop</p>
-            <p><b>Other:</b> Artificial intelligence tools, MS&nbsp;Office, Spanish language</p>
-        </div>
-        <div class="section">
-            <h2>Education</h2>
-            <p><a href="https://games.utah.edu/prospective-students/bs-in-games/" target="_blank">Bachelor of Science in Games &ndash; University of Utah</a> (May 2023)</p>
-            <p>The Games major in the Entertainment Arts and Engineering program teaches practical game development skills. This includes programming and digital art. The program provides real development experience in a studio-like environment.</p>
-        </div>
-    </div>
+						<p>Created extensible gameplay systems and designed levels to make use of them.</p>
+					</div>
+					<a class="play-button" href="https://ardub23.itch.io/misfire" target="_blank">View on itch.io</a>
+				</div>
+				<div class="project-card" style="background-color: #5e3730">
+					<a href="https://ardub23.github.io/CookieClicker/" target="_blank"><img src="images/cookie_clicker_thumb.png" alt="Cookie Clicker modding thumbnail"></a>
+					<div class="content">
+						<h3>Cookie Clicker modding</h3>
+						<h4>Programmer</h4>
+						<p>Developed JavaScript mods to automate and assist gameplay tasks.</p>
+					</div>
+					<a class="play-button" href="https://ardub23.github.io/CookieClicker/" target="_blank">View on GitHub</a>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<h2>Skills</h2>
+			<p><b>Game Engines:</b> Unreal Engine, Unity</p>
+			<p><b>Programming:</b> C#, C++, Java, JavaScript, Python, Lua</p>
+			<p><b>Art & Animation:</b> Autodesk Maya, Photoshop</p>
+			<p><b>Other:</b> Artificial intelligence tools, MS&nbsp;Office, Spanish language</p>
+		</div>
+		<div class="section">
+			<h2>Education</h2>
+			<p><a href="https://games.utah.edu/prospective-students/bs-in-games/" target="_blank">Bachelor of Science in Games &ndash; University of Utah</a> (May 2023)</p>
+			<p>The Games major in the Entertainment Arts and Engineering program teaches practical game development skills, including programming and digital art. The program provides real development experience in a studio-like environment.</p>
+		</div>
+	</div>
 </body>
 </html>

@@ -19,7 +19,7 @@
 			font-size: 24px;
 		}
 		header p {
-			font-size: 16px;
+			font-size: 18px;
 		}
 		.container {
 			width: 80%;
@@ -76,11 +76,30 @@
 			border-color: #726388;
 			text-align: center;
 		}
-		@media (max-width: 600px) {
-			.projects {
-				flex-direction: column;
-				align-items: center;
-			}
+		.tooltip {
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dotted gray;
+		}
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.5s;
+			border-radius: 5px;
+			background-color: #444;
+			color: #fff;
+			text-align: center;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			top: 100%;
+			left: 50%;
+			margin-left: -50px;
+			width: 100px;
+		}
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+			opacity: 1;
 		}
 	</style>
 </head>
@@ -88,7 +107,8 @@
 	<header>
 		<h1>Cameron Lentz</h1>
 		<h2>Game Programmer</h2>
-		<p><a href="mailto:cameronrw23@yahoo.com">CameronRW23@yahoo.com</a> &bull; (385)&nbsp;319-4099 &bull; <a href="https://www.linkedin.com/in/cameronlentz/" target="_blank">linkedin.com/in/CameronLentz</a></p>
+		<h3>Open to work</h3>
+		<p><a href="mailto:cameronrw23@yahoo.com">CameronRW23@yahoo.com</a> &bull; <span class="tooltip" style="white-space:nowrap;">(385) 319-4099<span class="tooltiptext">Call or text</span></span> &bull; <a href="https://www.linkedin.com/in/cameronlentz/" target="_blank">linkedin.com/in/CameronLentz</a></p>
 	</header>
 	<div class="container">
 		<div class="section">
@@ -132,17 +152,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="section">
-			<h2>Skills</h2>
-			<p><b>Game Engines:</b> Unreal Engine, Unity</p>
-			<p><b>Programming:</b> C#, C++, Java, JavaScript, Python, Lua</p>
-			<p><b>Art & Animation:</b> Autodesk Maya, Photoshop</p>
-			<p><b>Other:</b> Artificial intelligence tools, MS&nbsp;Office, Spanish language</p>
-		</div>
-		<div class="section">
-			<h2>Education</h2>
-			<p><a href="https://games.utah.edu/prospective-students/bs-in-games/" target="_blank">Bachelor of Science in Games &ndash; University of Utah</a> (May 2023)</p>
-			<p>The Games major in the Entertainment Arts and Engineering program teaches practical game development skills, including programming and digital art. The program provides real development experience in a studio-like environment.</p>
+		<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:0px 40px;">
+			<div class="section" style="max-width:450px;">
+				<h2>Skills</h2>
+				<p><b>Game Engines:</b> Unreal Engine, Unity</p>
+				<p><b>Programming:</b> C#, C++, Java, JavaScript, Python, Lua</p>
+				<p><b>Art & Animation:</b> Autodesk Maya, Photoshop</p>
+				<p><b>Other:</b> Artificial intelligence tools, MS&nbsp;Office, Spanish language</p>
+			</div>
+			<div class="section" style="max-width:450px;">
+				<h2>Education</h2>
+				<p><a href="https://games.utah.edu/prospective-students/bs-in-games/" target="_blank">Bachelor of Science in Games &ndash; University of Utah</a> (May 2023)</p>
+				<p>The Games major in the Entertainment Arts and Engineering program teaches practical game development skills, including programming and digital art. The program provides real development experience in a studio-like environment.</p>
+			</div>
 		</div>
 	</div>
 </body>
